@@ -9,8 +9,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    text-align: center;
-}
 
 ol {
     text-align: left;
@@ -40,7 +38,8 @@ h3 {
     background-color: #282828; /* Couleur sombre pour le header */
     color: #fcfaf9;
     padding: 20px 0;
-    position: relative;
+    position: relative; /* Ensures pseudo-elements are positioned relative to this container */
+    overflow: hidden; /* Prevents pseudo-elements from overflowing */
 }
 
 .header img {
@@ -147,13 +146,15 @@ h3 {
     background-color: #de2725;
 }
 
-/* FOOTER */
 footer {
     background-color: #282828;
     color: #fcfaf9;
     text-align: center;
     padding: 20px;
     margin-top: 50px;
+    position: relative; /* Ensures pseudo-elements are positioned relative to this container */
+    overflow: hidden; /* Prevents pseudo-elements from overflowing */
+}
 }
 
 /* ADDED GRAPHIC STYLES */
